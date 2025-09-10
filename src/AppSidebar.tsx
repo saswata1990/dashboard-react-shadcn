@@ -1,4 +1,3 @@
-import React from 'react'
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarSeparator } from './components/ui/sidebar'
 import { Calendar, Home, Inbox, Search, Settings } from 'lucide-react'
 
@@ -7,7 +6,7 @@ function AppSidebar() {
     const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
@@ -35,7 +34,7 @@ function AppSidebar() {
 
 
   return (
-    <Sidebar collapsible='icon'>
+    <Sidebar collapsible='icon' variant="inset">
         <SidebarHeader>ABC</SidebarHeader>
         <SidebarContent>
             <SidebarGroup>
