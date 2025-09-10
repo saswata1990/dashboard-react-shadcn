@@ -1,5 +1,5 @@
-import React from 'react'
-import { Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
+
+import { Card, CardDescription,  CardHeader, CardTitle } from '../ui/card'
 
 type SmallCardProps = {
     description:string;
@@ -8,7 +8,7 @@ type SmallCardProps = {
 }
 
 
-function SmallCard({description,value,style, ...props}:SmallCardProps) {
+function SmallCard({description,value,style}:SmallCardProps) {
   return (
     <div>
         <Card className={style}>

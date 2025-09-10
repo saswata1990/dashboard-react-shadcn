@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SmallCard from './SmallCard'
 
 function BottomCardsSection() {
