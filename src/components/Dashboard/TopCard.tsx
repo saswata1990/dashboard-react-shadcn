@@ -15,8 +15,8 @@ type TopCardProps = {
 
 function TopCard({description,title,icon,style,unit,borderBottom}:TopCardProps) {
   return (
-    <div>
-        <Card className={style}>
+    <div className="h-full">
+        <Card className={`${style}`}>
               <CardHeader>
                 <CardDescription className='text-black text-[1rem]'>{description}</CardDescription>
                 <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">{title} <span className='text-[0.8em]'>{unit}</span></CardTitle>
